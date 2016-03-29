@@ -16,8 +16,13 @@ openacademy/views/openacademy.xml
                             <page string="Description">
                                 <field name="description"/>
                             </page>
-                            <page string="About">
-                                This is an example of notebooks
+                            <page string="Sessions">
+                                <field name="session_ids">
+                                    <tree string="Registered sessions">
+                                        <field name="name"/>
+                                        <field name="instructor_id"/>
+                                    </tree>
+                                </field>
                             </page>
                         </notebook>
                     </sheet>
@@ -103,7 +108,7 @@ openacademy/views/openacademy.xml
             </field>
         </record>
         
-                <!-- session tree/list view -->
+        <!-- session tree/list view -->
         <record model="ir.ui.view" id="session_tree_view">
             <field name="name">session.tree</field>
             <field name="model">openacademy.session</field>
