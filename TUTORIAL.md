@@ -109,5 +109,7 @@ Añadir SQL constraints
   Añadir los siguientes constraints:
     Comprobar que el nombre del curso y la descripción son diferentes.
     Hacer el nombre del curso único.
+
+Añadir opción duplicar
   Como hemos añadido una constraint para que el nombre del curso sea único, no es posible usar la función duplicar. (Form ‣ Duplicate) .
   Re-implementar nuestro propio método "copy" que nos permitirá duplicar el objeto Curso, cambiando el nombre original por "Copia de [original name]".
